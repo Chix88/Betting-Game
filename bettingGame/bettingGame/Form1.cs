@@ -12,16 +12,15 @@ namespace bettingGame
 {
     public partial class Form1 : Form
     {
-        private Betters _mike = new Betters();
+        // private Betters _mike = new Betters();
         
 
         public Form1()
-        {
-            
+        {            
             InitializeComponent();
             RemplirForm1();
-
         }
+        
         ImageRuning[] cats = new ImageRuning[3];
 
         private void ToggleRace(int index, PictureBox catBox)
@@ -40,8 +39,7 @@ namespace bettingGame
             ToggleRace(1, pictureBox2);
             
             ToggleRace(2, pictureBox3);
-            
-        }
+         }
 
         private void timer1_Tick(object sender, EventArgs e)
         {
@@ -55,10 +53,8 @@ namespace bettingGame
                         timer1.Stop();
                     }
                 }
-                
-            }
+           }
         }
-
 
         private void checkBox1_CheckedChanged_1(object sender, EventArgs e)
         {
@@ -70,17 +66,6 @@ namespace bettingGame
             {
                 panel1.Enabled = false;
             }
-        }
-
-        public void RemplirForm1()
-        {
-            
-           
-            
-        }
-
-        
-      
-        
+        }    
     }
 }
